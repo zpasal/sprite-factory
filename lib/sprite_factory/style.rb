@@ -57,7 +57,6 @@ module SpriteFactory
       styles = []
       divider = config[:retina] ? 2 : 1
       images.each do |image|
-        puts "DIV #{divider}"
         attr = [
           "width: #{image[:cssw] / divider}px",
           "height: #{image[:cssh] / divider}px",
