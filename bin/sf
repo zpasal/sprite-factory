@@ -30,6 +30,7 @@ pngcrush_help     = "use pngcrush to optimize generated image"
 padding_help      = "add padding to each sprite"
 margin_help       = "add margin to each sprite"
 nocomments_help   = "suppress comments in generated stylesheet"
+retina_help       = "create 50% smaller images & css as well"
 
 op.on("--layout       [ORIENTATION]", layout_help)       {|value| options[:layout]       = value }
 op.on("--style        [STYLE]",       style_help)        {|value| options[:style]        = value }
@@ -42,6 +43,7 @@ op.on("--pngcrush",                   pngcrush_help)     {|value| options[:pngcr
 op.on("--padding [PIXELS]",           padding_help)      {|value| options[:padding]      = value.to_i }
 op.on("--margin [PIXELS]",            margin_help)       {|value| options[:margin]       = value.to_i }
 op.on("--nocomments",                 nocomments_help)   {|value| options[:nocomments]   = true  }
+op.on("--retina",                     retina_help)       {|value| options[:retina]       = true  }
 
 begin
   op.parse!(ARGV)
