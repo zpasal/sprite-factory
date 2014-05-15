@@ -163,7 +163,7 @@ module SpriteFactory
           "url(#{File.join(custom, base)})" # allow custom url with simple prepend
         end
       else
-        "url(#{base})"                      # otherwise, just default to basename of the output image file
+        "image-url(#{base})"                      # otherwise, just default to basename of the output image file
       end
     end
 
