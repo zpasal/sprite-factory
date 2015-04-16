@@ -16,7 +16,7 @@ module SpriteFactory
     end
 
     def self.retina_style_start
-      "@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {"
+      "@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {"
     end
 
     def self.retina_style_end
