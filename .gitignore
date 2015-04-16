@@ -9,3 +9,5 @@ test/images/*.png
 test/images/*.css
 test/images/*.sass
 test/images/*.scss
+.DS_Store
+
